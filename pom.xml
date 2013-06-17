@@ -79,14 +79,14 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
+                        <Jahia-Depends>jquery</Jahia-Depends>
                         <Jahia-Module-Type>system</Jahia-Module-Type>
                         <Jahia-Static-Resources>/css,/icons,/javascript,/swf</Jahia-Static-Resources>
                         <_removeheaders>
                             Include-Resource,
                             Private-Package,
                             Embed-Dependency,
-                            Embed-Transitive,
-                            Jahia-Depends
+                            Embed-Transitive
                         </_removeheaders>
                     </instructions>
                 </configuration>
