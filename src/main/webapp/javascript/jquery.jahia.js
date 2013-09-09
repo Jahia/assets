@@ -61,11 +61,14 @@
 						responseText = r;
 					});
 
-                    // Get the list of all scripts that have returned by the ajax call 
+                    // Get the list of all scripts that have been returned by the ajax call if they have a src parameter
 					ar=[];
                     while ((match = extscript.exec(responseText)) != null) {
-                        src = /src=\"([^\"]*)\"/.exec(match[1])[1]
-						ar[src]=match[0];
+                        var srcParamMatch = /src=\"([^\"]*)\"/.exec(match[1]);
+                        if (srcParamMatch != null && srcParamMatch.length >= 2) {
+                            src = srcParamMatch[1];
+                            ar[src] = match[0];
+                        }
                     }
 					for (src in ar)
 					{
