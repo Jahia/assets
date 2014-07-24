@@ -84,9 +84,9 @@
   <name>Jahia Static Assets</name>
   <description>Jahia template module that includes common CSS and JavaScript resources and also supports Content Delivery Network.</description>
   <scm>
-    <connection>scm:svn:https://devtools.jahia.com/svn/jahia/tags/JAHIA_7.0.0.2-SNAPSHOT/modules/assets</connection>
-    <developerConnection>scm:svn:https://devtools.jahia.com/svn/jahia/tags/JAHIA_7.0.0.2-SNAPSHOT/modules/assets</developerConnection>
-    <url>https://devtools.jahia.com/svn/jahia/tags/JAHIA_7.0.0.2-SNAPSHOT/modules/assets</url>
+    <connection>scm:svn:https://devtools.jahia.com/svn/jahia/branches/JAHIA-7-0-X-X-BRANCH/modules/assets</connection>
+    <developerConnection>scm:svn:https://devtools.jahia.com/svn/jahia/branches/JAHIA-7-0-X-X-BRANCH/modules/assets</developerConnection>
+    <url>https://devtools.jahia.com/svn/jahia/branches/JAHIA-7-0-X-X-BRANCH/modules/assets</url>
   </scm>
   <repositories>
     <repository>
