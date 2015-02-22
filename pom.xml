@@ -81,6 +81,7 @@
         <version>7.1.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>assets</artifactId>
+    <version>7.1.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Jahia Static Assets</name>
 
@@ -89,11 +90,10 @@
     </description>
 
     <scm>
-        <connection>scm:svn:https://devtools.jahia.com/svn/jahia/trunk/modules/assets</connection>
-        <developerConnection>scm:svn:https://devtools.jahia.com/svn/jahia/trunk/modules/assets</developerConnection>
-        <url>https://devtools.jahia.com/svn/jahia/trunk/modules/assets</url>
+        <connection>scm:git:git@github.com:Jahia/assets.git</connection>
+        <developerConnection>scm:git:git@github.com:Jahia/assets.git</developerConnection>
+        <url>scm:git:git@github.com:Jahia/assets.git</url>
     </scm>
-
 
     <properties>
         <jahia-depends>jquery,ckeditor</jahia-depends>
