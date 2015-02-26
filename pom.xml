@@ -5,7 +5,7 @@
     =                   JAHIA'S DUAL LICENSING - IMPORTANT INFORMATION                       =
     ==========================================================================================
 
-        Copyright (C) 2002-2014 Jahia Solutions Group SA. All rights reserved.
+        Copyright (C) 2002-2015 Jahia Solutions Group SA. All rights reserved.
 
         THIS FILE IS AVAILABLE UNDER TWO DIFFERENT LICENSES:
         1/GPL OR 2/JSEL
@@ -77,17 +77,19 @@
   <parent>
     <groupId>org.jahia.modules</groupId>
     <artifactId>jahia-modules</artifactId>
-    <version>7.0.0.5-SNAPSHOT</version>
+    <version>7.0.0.4</version>
   </parent>
   <artifactId>assets</artifactId>
+  <version>7.0.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>Jahia Static Assets</name>
   <description>Jahia template module that includes common CSS and JavaScript resources and also supports Content Delivery Network.</description>
-  <scm>
-    <connection>scm:svn:https://devtools.jahia.com/svn/jahia/branches/JAHIA-7-0-X-X-BRANCH/modules/assets</connection>
-    <developerConnection>scm:svn:https://devtools.jahia.com/svn/jahia/branches/JAHIA-7-0-X-X-BRANCH/modules/assets</developerConnection>
-    <url>https://devtools.jahia.com/svn/jahia/branches/JAHIA-7-0-X-X-BRANCH/modules/assets</url>
-  </scm>
+    <scm>
+        <connection>scm:git:git@github.com:Jahia/assets.git</connection>
+        <developerConnection>scm:git:git@github.com:Jahia/assets.git</developerConnection>
+        <url>scm:git:git@github.com:Jahia/assets.git</url>
+		<tag>JAHIA-7-0-X-X-BRANCH</tag>
+    </scm>
   <repositories>
     <repository>
       <releases>
