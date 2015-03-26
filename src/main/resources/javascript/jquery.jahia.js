@@ -58,7 +58,7 @@
                     for (src in ar)
                     {
                         // If the script was already present in the head, do not add it twice
-                        if ($('head:first script[src="' + src + '"]').length > 0 || (typeof jAggregatedStaticAssetsJavascript != 'undefined' && $.inArray(src, jAggregatedStaticAssetsJavascript) != -1)) {
+                        if ($('head:first script[src="' + src + '"]').length > 0 || (typeof jASAJ != 'undefined' && $.inArray(src, jASAJ) != -1)) {
                             responseText = responseText.replace(ar[src],"")
                         }
                     }
