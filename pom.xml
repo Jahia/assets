@@ -93,7 +93,7 @@
     <scm>
         <connection>scm:git:git@github.com:Jahia/assets.git</connection>
         <developerConnection>scm:git:git@github.com:Jahia/assets.git</developerConnection>
-        <url>scm:git:git@github.com:Jahia/assets.git</url>
+        <url>https://github.com/Jahia/assets</url>
     </scm>
 
     <properties>
