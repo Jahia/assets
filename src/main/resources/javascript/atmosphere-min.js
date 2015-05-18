@@ -1,6 +1,6 @@
 (function(a,b){if(typeof define==="function"&&define.amd){define(b)
 }else{a.atmosphere=b()
-}}(this,function(){var c="2.2.9-javascript",a={},e,d=false,h=[],g=[],f=0,b=Object.prototype.hasOwnProperty;
+}}(this,function(){var c="2.2.11-javascript",a={},e,d=false,h=[],g=[],f=0,b=Object.prototype.hasOwnProperty;
 a={onError:function(i){},onClose:function(i){},onOpen:function(i){},onReopen:function(i){},onMessage:function(i){},onReconnect:function(j,i){},onMessagePublished:function(i){},onTransportFailure:function(j,i){},onLocalMessage:function(i){},onFailureToReconnect:function(j,i){},onClientTimeout:function(i){},onOpenAfterResume:function(i){},WebsocketApiAdapter:function(j){var i,k;
 j.onMessage=function(l){k.onmessage({data:l.responseBody})
 };
@@ -65,6 +65,7 @@ aL.contentType="text/plain";
 aL.transport="polling";
 aL.method="GET";
 aL.data="";
+aL.heartbeat=null;
 if(q.enableXDR){aL.enableXDR=q.enableXDR
 }aL.async=q.closeAsync;
 am("",aL)
@@ -435,7 +436,7 @@ delete q.reconnectId
 ar.state="closed";
 if(aG){a.util.log(q.logLevel,["Websocket closed normally"])
 }else{if(!aJ){az("Websocket failed. Downgrading to Comet and resending")
-}else{if(q.reconnect&&ar.transport==="websocket"&&aM.code!==1001){m();
+}else{if(q.reconnect&&ar.transport==="websocket"){m();
 if(ay++<q.maxReconnectOnClose){W("re-connecting",q.transport,q);
 if(q.reconnectInterval>0){q.reconnectId=setTimeout(function(){ar.responseBody="";
 ar.messages=[];
@@ -681,7 +682,7 @@ if(aL.connectTimeout>0){aL.id=setTimeout(function(){if(aL.requestCount===0){m();
 l("Connect timeout","closed",200,aL.transport)
 }},aL.connectTimeout)
 }}if(q.withCredentials&&q.transport!=="websocket"){if("withCredentials" in aK){aK.withCredentials=true
-}}if(!q.dropHeaders){aK.setRequestHeader("X-Atmosphere-Framework",a.util.version);
+}}if(!q.dropHeaders){aK.setRequestHeader("X-Atmosphere-Framework",c);
 aK.setRequestHeader("X-Atmosphere-Transport",aL.transport);
 if(aL.heartbeat!==null&&aL.heartbeat.server!==null){aK.setRequestHeader("X-Heartbeat-Server",aK.heartbeat.server)
 }if(aL.trackMessageLength){aK.setRequestHeader("X-Atmosphere-TrackMessageSize","true")
@@ -1124,6 +1125,8 @@ if(a.util.browser.trident){a.util.browser.msie=true
 }})();
 a.util.on(window,"unload",function(i){a.util.debug(new Date()+" Atmosphere: unload event");
 a.unsubscribe()
+});
+a.util.on(window,"beforeunload",function(i){a.util.debug(new Date()+" Atmosphere: beforeunload event")
 });
 a.util.on(window,"keypress",function(i){if(i.charCode===27||i.keyCode===27){if(i.preventDefault){i.preventDefault()
 }}});
