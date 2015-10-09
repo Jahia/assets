@@ -81,7 +81,7 @@
         <relativePath />
     </parent>
     <artifactId>assets</artifactId>
-    <version>7.1.1</version>
+    <version>7.1.2-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Jahia Static Assets</name>
 
@@ -93,7 +93,7 @@
         <connection>scm:git:git@github.com:Jahia/assets.git</connection>
         <developerConnection>scm:git:git@github.com:Jahia/assets.git</developerConnection>
         <url>https://github.com/Jahia/assets</url>
-      <tag>7_1_1</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <properties>
