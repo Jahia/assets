@@ -1128,7 +1128,8 @@ $.format = $.validator.format;
 ;(function($) {
 	// only implement if not provided by jQuery core (since 1.4)
 	// TODO verify if jQuery 1.4's implementation is compatible with older jQuery special-event APIs
-	if (!jQuery.event.special.focusin && !jQuery.event.special.focusout && document.addEventListener) {
+	// JAHAIA: fix issue in IE[9) by excluding window attachEvent regarding https://github.com/jzaefferer/jquery-validation/issues/542
+	if (!jQuery.event.special.focusin && !jQuery.event.special.focusout && !window.attachEvent && document.addEventListener) {
 		$.each({
 			focus: 'focusin',
 			blur: 'focusout'
