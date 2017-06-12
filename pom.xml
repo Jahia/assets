@@ -70,7 +70,7 @@
 
     <properties>
         <jahia-depends>jquery,ckeditor</jahia-depends>
-		<jahia-depends-skip-require-capability>jquery,ckeditor</jahia-depends-skip-require-capability>
+        <jahia-depends-skip-require-capability>jquery,ckeditor</jahia-depends-skip-require-capability>
         <jahia-module-type>system</jahia-module-type>
         <jahia-static-resources>/css,/icons,/javascript,/swf</jahia-static-resources>
     </properties>
