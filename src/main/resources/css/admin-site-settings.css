@@ -93,3 +93,7 @@ div.pagination select{
     color:#666;
     padding:0;
 }
+
+.lastWarning {
+    color:#f00;
+}
