@@ -402,6 +402,37 @@ span.flag_fr_CH_on {
     background: url( "images/flags/fr_on.png" ) no-repeat 0 0;
 }
 
+span.flag_ga_off,
+span.flag_ga_GA_off {
+    background: url( "images/flags/ga_on.png" ) no-repeat 0 0;
+}
+
+span.flag_ga_off:hover,
+span.flag_ga_GA_off:hover {
+    background: url( "images/flags/ga_on.png" ) no-repeat 0 0;
+}
+
+span.flag_ga_on,
+span.flag_ga_GA_on {
+    background: url( "images/flags/ga_on.png" ) no-repeat 0 0;
+}
+
+span.flag_gd_off,
+span.flag_gd_GD_off {
+    background: url( "images/flags/gd_on.png" ) no-repeat 0 0;
+}
+
+span.flag_gd_off:hover,
+span.flag_gd_GD_off:hover {
+    background: url( "images/flags/gd_on.png" ) no-repeat 0 0;
+}
+
+span.flag_gd_on,
+span.flag_gd_GD_on {
+    background: url( "images/flags/gd_on.png" ) no-repeat 0 0;
+}
+
+
 span.flag_hi_off,
 span.flag_hi_IN_off {
     background: url( "images/flags/hi_on.png" ) no-repeat 0 0;
@@ -568,6 +599,21 @@ span.flag_mk_MK_off:hover {
 span.flag_mk_on,
 span.flag_mk_MK_on {
     background: url( "images/flags/mk_on.png" ) no-repeat 0 0;
+}
+
+span.flag_mt_off,
+span.flag_mt_MT_off {
+    background: url( "images/flags/mt_on.png" ) no-repeat 0 0;
+}
+
+span.flag_mt_off:hover,
+span.flag_mt_MT_off:hover {
+    background: url( "images/flags/mt_on.png" ) no-repeat 0 0;
+}
+
+span.flag_mt_on,
+span.flag_mt_MT_on {
+    background: url( "images/flags/mt_on.png" ) no-repeat 0 0;
 }
 
 span.flag_nl_off,
