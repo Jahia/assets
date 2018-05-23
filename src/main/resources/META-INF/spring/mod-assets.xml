@@ -9,6 +9,7 @@
                 <entry key="jquery.js" value="jquery-${jahia.jquery.version:1.12.4}.min.js jquery.jahia.min.js"/>
                 <entry key="jquery.min.js" value="jquery-${jahia.jquery.version:1.12.4}.min.js jquery.jahia.min.js"/>
                 <entry key="jquery.jahia.js" value="jquery.jahia.min.js"/>
+                <entry key="jquery-migrate.min.js" value="${jahia.jmigrate.file}"/>
 
                 <entry key="ckeditor/ckeditor.js" value="ckeditor.js"/>
                 <entry key="ckeditor/adapters/jquery.js" value="adapters/jquery.js"/>
