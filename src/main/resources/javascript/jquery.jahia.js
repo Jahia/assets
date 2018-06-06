@@ -14,8 +14,8 @@
             self = this,
             off = url.indexOf(" ");
 
-        if ( off >= 0 ) {
-            selector = url.slice( off, url.length );
+        if ( off > -1) {
+            selector = stripAndCollapse( url.slice( off ) );
             url = url.slice( 0, off );
         }
 
@@ -39,7 +39,7 @@
                 url: url,
 
                 // if "type" variable is undefined, then "GET" method will be used
-                type: type,
+                type: type || "GET",
                 dataType: "html",
                 data: params
             }).done(function( responseText ) {
@@ -72,11 +72,12 @@
                         responseText );
 
 
-                }).complete( callback && function( jqXHR, status ) {
+                }).always( callback && function( jqXHR, status ) {
 
-                    self.each( callback, response || [ jqXHR.responseText, status, jqXHR ] );
-
-                });
+                    self.each( function() {
+                        callback.apply( this, response || [ jqXHR.responseText, status, jqXHR ] );
+                    } );
+                } );
         }
 
         return this;
