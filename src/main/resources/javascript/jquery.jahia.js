@@ -15,6 +15,11 @@
             off = url.indexOf(" ");
 
         if ( off > -1) {
+            function stripAndCollapse( value ) {
+                var tokens = value.match( /[^\x20\t\r\n\f]+/g ) || [];
+                return tokens.join( " " );
+            }
+
             selector = stripAndCollapse( url.slice( off ) );
             url = url.slice( 0, off );
         }
