@@ -7,7 +7,7 @@
     var _load1 = jQuery.fn.load;
     jQuery.fn.load = function( url, params, callback ) {
         if ( typeof url !== "string" && _load1 ) {
-            return _load1.apply( this, arguments );
+            return this.on("load",url);
         }
 
         var selector, response, type,
