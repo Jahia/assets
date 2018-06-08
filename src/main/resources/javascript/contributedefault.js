@@ -20,7 +20,7 @@ var contributionI18n = {
 
 var lockedPath = {};
 
-$(window).unload( function() {
+$(window).on("unload", function() {
     $.each(lockedPath, function(key, value) {
         if (value = 'locked') {
             $.ajax({
