@@ -1,0 +1,49 @@
+{
+  "name": "codemirror",
+  "version": "5.50.2",
+  "main": "lib/codemirror.js",
+  "style": "lib/codemirror.css",
+  "author": {
+    "name": "Marijn Haverbeke",
+    "email": "marijnh@gmail.com",
+    "url": "http://marijnhaverbeke.nl"
+  },
+  "description": "Full-featured in-browser code editor, adopted and modified by Jahia",
+  "license": "MIT",
+  "directories": {
+    "lib": "./lib"
+  },
+  "scripts": {
+    "webpack": "node --max_old_space_size=2048 ./node_modules/.bin/webpack",
+    "webpack-dev": "node --max_old_space_size=2048 ./node_modules/.bin/webpack --mode development",
+    "build": "rollup -c",
+    "watch": "rollup -w -c",
+    "prepare": "npm run-script build",
+    "lint": "bin/lint"
+  },
+  "devDependencies": {
+    "blint": "^1.1.0",
+    "node-static": "0.7.11",
+    "puppeteer": "^1.20.0",
+    "rollup": "^1.26.3",
+    "rollup-plugin-buble": "^0.19.8",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "bugs": "http://github.com/codemirror/CodeMirror/issues",
+  "keywords": [
+    "JavaScript",
+    "CodeMirror",
+    "Editor"
+  ],
+  "homepage": "https://codemirror.net",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codemirror/CodeMirror.git"
+  },
+  "jspm": {
+    "directories": {},
+    "dependencies": {},
+    "devDependencies": {}
+  }
+}
