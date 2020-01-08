@@ -1,6 +1,4 @@
 import { CodeMirror } from "./edit/main.js";
-// This is not necessary for building with rollup but is for building with webpack
-window.CodeMirror = CodeMirror;
 // Import UMD modules, note that they will use CodeMirror as global variable
 import "../addon/edit/matchbrackets.js";
 import "../addon/edit/closetag.js";

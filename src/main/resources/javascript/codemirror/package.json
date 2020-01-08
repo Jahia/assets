@@ -14,8 +14,6 @@
     "lib": "./lib"
   },
   "scripts": {
-    "webpack": "node --max_old_space_size=2048 ./node_modules/.bin/webpack",
-    "webpack-dev": "node --max_old_space_size=2048 ./node_modules/.bin/webpack --mode development",
     "build": "rollup -c",
     "watch": "rollup -w -c",
     "prepare": "npm run-script build",
