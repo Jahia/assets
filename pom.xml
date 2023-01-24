@@ -49,7 +49,7 @@
     <parent>
         <groupId>org.jahia.modules</groupId>
         <artifactId>jahia-modules</artifactId>
-        <version>8.0.0.0</version>
+        <version>8.1.4.0-SNAPSHOT</version>
         <relativePath />
     </parent>
     <artifactId>assets</artifactId>
@@ -70,10 +70,10 @@
 
     <properties>
         <jahia-depends>jquery,ckeditor</jahia-depends>
-        <jahia-depends-skip-require-capability>jquery,ckeditor</jahia-depends-skip-require-capability>
+        <jahia-deploy-on-site>all</jahia-deploy-on-site>
         <jahia-module-type>system</jahia-module-type>
         <jahia-static-resources>/css,/icons,/javascript,/swf</jahia-static-resources>
-        <jahia-module-signature>MC0CFHSu820cEqmxEUuLt2gJ+nmfaUuuAhUAjfJh3g8UZfvoiL4I8CG+8+SpMNk=</jahia-module-signature>
+        <jahia-module-signature>MCwCFE/nUI62QcmFJgnLlSICfeK/bCx3AhR3Lz/784BbtdyWehkH8wIWv50J3Q==</jahia-module-signature>
         <require-capability>osgi.extender;filter:="(osgi.extender=org.jahia.bundles.blueprint.extender.config)"</require-capability>
     </properties>
 
