@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    
+
     <bean class="org.jahia.services.render.StaticAssetMapping">
         <property name="mapping">
             <map>
@@ -12,6 +12,7 @@
                 <entry key="jquery.jahia.js" value="jquery.jahia.min.js"/>
 
                 <entry key="ckeditor/ckeditor.js" value="ckeditor.js"/>
+                <entry key="ckeditor/config.js" value="config.js"/>
                 <entry key="ckeditor/adapters/jquery.js" value="adapters/jquery.js"/>
             </map>
         </property>
