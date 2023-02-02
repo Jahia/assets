@@ -12,7 +12,6 @@
                 <entry key="jquery.jahia.js" value="jquery.jahia.min.js"/>
 
                 <entry key="ckeditor/ckeditor.js" value="ckeditor.js"/>
-                <entry key="ckeditor/config.js" value="config.js"/>
                 <entry key="ckeditor/adapters/jquery.js" value="adapters/jquery.js"/>
             </map>
         </property>
