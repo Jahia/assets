@@ -69,7 +69,7 @@
   </scm>
 
     <properties>
-        <jahia-depends>jquery,ckeditor</jahia-depends>
+        <jahia-depends>jquery</jahia-depends>
         <jahia-deploy-on-site>all</jahia-deploy-on-site>
         <jahia-module-type>system</jahia-module-type>
         <jahia-static-resources>/css,/icons,/javascript,/swf</jahia-static-resources>
