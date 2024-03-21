@@ -1709,7 +1709,7 @@
                 this.close();
             }
 
-            this.overlay = $('<div class="fancybox-overlay"></div>').appendTo( F.coming ? F.coming.parent : opts.parent );
+            this.overlay = $('<div class="fancybox-overlay" style="z-index: 2000000"></div>').appendTo( F.coming ? F.coming.parent : opts.parent );
             this.fixed   = false;
 
             if (opts.fixed && F.defaults.fixed) {
