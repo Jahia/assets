@@ -1,6 +1,7 @@
 /*!
  * jQuery Form Plugin
- * version: 3.19 (19-NOV-2012)
+ * version: 3.19-jahia.1 (25-MARCH-2024)
+ * includes security fix: https://github.com/jquery-form/form/pull/586
  * @requires jQuery v1.5 or later
  *
  * Examples and documentation at: http://malsup.com/jquery/form/
