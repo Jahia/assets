@@ -73,7 +73,7 @@
         <jahia-deploy-on-site>all</jahia-deploy-on-site>
         <jahia-module-type>system</jahia-module-type>
         <jahia-static-resources>/css,/icons,/javascript,/swf</jahia-static-resources>
-        <jahia-module-signature>MCwCFE/nUI62QcmFJgnLlSICfeK/bCx3AhR3Lz/784BbtdyWehkH8wIWv50J3Q==</jahia-module-signature>
+        <jahia-module-signature>MCwCFFn4mOk87bn283I34GadU3U/mAaHAhROUbTRWVBAaPq2/azThv4Nyicc4Q==</jahia-module-signature>
         <require-capability>osgi.extender;filter:="(osgi.extender=org.jahia.bundles.blueprint.extender.config)"</require-capability>
     </properties>
 
