@@ -11,60 +11,17 @@ on:
       - '**'
 
 jobs:
-  update-signature:
-    name: Update module signature
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: jahia/jahia-modules-action/update-signature@v2
-        with:
-          nexus_username: ${{ secrets.NEXUS_USERNAME }}
-          nexus_password: ${{ secrets.NEXUS_PASSWORD }}
-          nexus_enterprise_releases_url: ${{ secrets.NEXUS_ENTERPRISE_RELEASES_URL }}
-
-  build:
-    name: Build Module
-    needs: update-signature
-    runs-on: ubuntu-latest
-    container:
-      image: jahia/cimg-mvn-cache:ga_cimg_openjdk_11.0.20-node
-      credentials:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_PASSWORD }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: jahia/jahia-modules-action/build@v2
-        with:
-          nexus_username: ${{ secrets.NEXUS_USERNAME }}
-          nexus_password: ${{ secrets.NEXUS_PASSWORD }}
-          module_id: assets
-          
-  sbom:
-    name: SBOM processing
-    needs: build
-    runs-on: ubuntu-latest
-    container:
-      image: cyclonedx/cyclonedx-cli:0.24.2   
-    steps:
-      - uses: jahia/jahia-modules-action/sbom-processing@v2
-        with:
-          dependencytrack_hostname: ${{ vars.DEPENDENCYTRACK_HOSTNAME }}
-          dependencytrack_apikey: ${{ secrets.DEPENDENCYTRACK_APIKEY }}
-          sbom_artifacts: 'build-artifacts'
-
-  publish:
-    name: Publish module
-    needs: build
-    if: github.ref == 'refs/heads/master'
-    runs-on: ubuntu-latest
-    container:
-      image: jahia/cimg-mvn-cache:ga_cimg_openjdk_11.0.20-node
-      credentials:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_PASSWORD }}
-    steps:
-      - uses: actions/checkout@v4   
-      - uses: jahia/jahia-modules-action/publish@v2
-        with:
-          nexus_username: ${{ secrets.NEXUS_USERNAME }}
-          nexus_password: ${{ secrets.NEXUS_PASSWORD }}
+  on-merge:
+    uses: jahia/jahia-modules-action/.github/workflows/reusable-on-code-change.yml@reusable-on-code-change
+    secrets: inherit
+    with:
+      module_id: assets
+      update_signature_execute: true
+      static_analysis_node_version: 12
+      static_analysis_auditci_level: critical
+      module_branch: ${{ github.head_ref }}
+      sbom_execute: true
+      sbom_artifacts: 'build-artifacts'
+      sbom_hostname: ${{ vars.DEPENDENCYTRACK_HOSTNAME }}
+      publish_execute: true
+      publish_container_image: jahia/cimg-mvn-cache:ga_cimg_openjdk_11.0.20-node
