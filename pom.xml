@@ -121,6 +121,39 @@
                     <outputName>java-bom.cdx</outputName>
                 </configuration>
             </plugin>
+            <plugin>
+                <!-- The libraries under src/main/resources/{javascript,css,swf} are vendored
+                     directly, not resolved through npm or Maven, so cyclonedx-maven-plugin
+                     above never sees them. sbom/manual-bom.cdx.json is a hand-maintained
+                     CycloneDX inventory of that vendored code; copying it into target/ here
+                     puts it alongside java-bom.cdx.json so both are picked up by the
+                     "SBOM processing" CI job (jahia-modules-action/sbom-processing), which
+                     merges every *.cdx.json / *bom.json under target/ before uploading to
+                     Dependency Track. See https://github.com/Jahia/jahia-private/issues/2882. -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
+                <executions>
+                    <execution>
+                        <id>copy-manual-sbom</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.basedir}/sbom</directory>
+                                    <includes>
+                                        <include>manual-bom.cdx.json</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 </project>

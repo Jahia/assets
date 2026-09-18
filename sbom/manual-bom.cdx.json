@@ -1,0 +1,1041 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:8c6e91c7-f6b3-45b8-914a-eecae17d7dcc",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "library",
+      "bom-ref": "assets-manual-inventory",
+      "name": "assets-manually-packaged-libraries",
+      "description": "Manually-authored inventory of third-party JS/CSS/SWF libraries vendored under src/main/resources/{javascript,css,swf} that are not obtained through npm/Maven and so are invisible to the module's automated cyclonedx-maven-plugin BOM. See https://github.com/Jahia/jahia-private/issues/2882."
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery-ui",
+      "name": "jquery-ui",
+      "version": "1.14.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/jquery-ui@1.14.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://jqueryui.com"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery-ui.min.js, css/jquery-ui.smoothness.css, i18n/jquery-ui-i18n.js, i18n/jquery.ui.datepicker-*.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:bootstrap",
+      "name": "bootstrap",
+      "version": "2.3.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:npm/bootstrap@2.3.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://getbootstrap.com"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/admin-bootstrap.js, css/admin-bootstrap.css, css/font/glyphicons-halflings-regular.*, css/img/glyphicons-halflings*.png"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "Vendored JS banner reads v2.3.1; vendored CSS banner reads v2.3.2 - a real version drift between the two vendored files, not an archaeology error. PURL is pinned to the JS version since that drives most Bootstrap 2.x CVE exposure (XSS in tooltip/popover/affix/carousel); the CSS is one patch release newer."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:bootstrap-filestyle",
+      "name": "bootstrap-filestyle",
+      "version": "1.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/bootstrap-filestyle@1.0.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/markusslima/bootstrap-filestyle"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/bootstrap-filestyle.min.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:bootstrapSwitch",
+      "name": "bootstrapSwitch",
+      "version": "1.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://larentis.eu/switch/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/bootstrapSwitch.js, css/bootstrapSwitch.css"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "medium"
+        },
+        {
+          "name": "jahia:purlCaveat",
+          "value": "This 1.3 release predates the later bootstrap-switch v3 rewrite that was published to npm; unclear whether pkg:npm/bootstrap-switch@1.3 resolves to the same codebase - verify in Dependency-Track before trusting a vuln match."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:atmosphere.js",
+      "name": "atmosphere.js",
+      "version": "2.2.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:npm/atmosphere.js@2.2.12",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/Atmosphere/atmosphere-javascript"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/atmosphere.js, javascript/atmosphere-min.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:codemirror",
+      "name": "codemirror",
+      "version": "3.19.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/codemirror@3.19.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://codemirror.net"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/codemirror/**, javascript/codemirror.jahia.min.js, css/codemirror/**"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "codemirror.jahia.min.js is Jahia's own minified build of this same version plus custom modes, not a separate release."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:datatables.net",
+      "name": "datatables.net",
+      "version": "1.13.11",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/datatables.net@1.13.11",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://datatables.net"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/datatables/jquery.dataTables.js, javascript/datatables/jquery.dataTables.min.js, javascript/datatables/dataTables.i18n-sorting-ext.js, i18n/jquery.dataTables-*.js, css/datatables/**"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "Upstream npm package name is datatables.net, not jquery.dataTables."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery-autocomplete",
+      "name": "jquery-autocomplete",
+      "version": "1.2.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/jquery-autocomplete@1.2.2",
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.autocomplete.js, javascript/jquery.autocomplete.min.js, javascript/jquery.autocomplete.pack.js, css/jquery.autocomplete.css"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "medium"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "Pre-dates jQuery UI's own autocomplete widget."
+        }
+      ],
+      "pedigree": {
+        "notes": "Vendored file header states this copy was modified by a third party (Alfonso Gomez-Arzola) from Jorn Zaefferer's original 1.2.2 - pinning to upstream 1.2.2 is an approximation, not a guarantee of byte-identical code."
+      }
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery-blockui",
+      "name": "jquery-blockui",
+      "version": "2.70.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/jquery-blockui@2.70.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "http://malsup.com/jquery/block/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.blockUI.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery-colorbox",
+      "name": "jquery-colorbox",
+      "version": "1.3.17.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/jquery-colorbox@1.3.17.2",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.jacklmoore.com/colorbox"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.colorbox.js, css/jquery.colorbox.css, css/images/colorbox/**"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        },
+        {
+          "name": "jahia:purlCaveat",
+          "value": "npm has historically only published 3-part versions (e.g. 1.3.17) for this package; the vendored copy's 4th version segment (.2) may not resolve on OSS Index/Dependency-Track."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery.cookie",
+      "name": "jquery.cookie",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/carhartl/jquery-cookie"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.cookie.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "low"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "No @version tag in the vendored copy; only a 2010 copyright year. Version must be pinned by diffing against upstream release tags before this component is useful for vuln matching."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery-cutetime",
+      "name": "jquery-cutetime",
+      "version": "1.1.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "http://tpgblog.com/cutetime/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.cuteTime.js, javascript/jquery.cuteTime.settings.fr.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "Small hobby plugin (Jeremy Horn), never published to any package registry - no viable PURL."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery.defer",
+      "name": "jquery.defer",
+      "version": "1.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.adaptavist.com"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.defer.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "Never published to any package registry - no viable PURL."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:fancybox",
+      "name": "fancybox",
+      "version": "2.1.5",
+      "licenses": [
+        {
+          "license": {
+            "name": "Custom (fancyapps, non-commercial-free)"
+          }
+        }
+      ],
+      "purl": "pkg:npm/fancybox@2.1.5",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://fancyapps.com/fancybox/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.fancybox.js, javascript/jquery.fancybox-buttons.js, javascript/jquery.fancybox-media.js, javascript/jquery.fancybox-thumbs.js, javascript/jquery.fancybox.load.js, javascript/jquery.fancybox.pack.js, css/jquery.fancybox*.css, css/images/fancybox/**"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "License is fancyapps' own non-commercial-free terms, not plain MIT - relevant for compliance, not just CVEs."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery-form",
+      "name": "jquery-form",
+      "version": "3.19",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/jquery-form@3.19",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jquery-form/form"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.form.js, javascript/jquery.form.min.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        }
+      ],
+      "pedigree": {
+        "notes": "Vendored copy is labelled 3.19-jahia.1 and explicitly backports the security fix from jquery-form/form#586. A raw match against pkg:npm/jquery-form@3.19 in a scanner would wrongly flag this as vulnerable to whatever #586 fixed - it is not."
+      }
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery-jeditable",
+      "name": "jquery-jeditable",
+      "version": "1.7.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/jquery-jeditable@1.7.3",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.appelsiini.net/projects/jeditable"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.jeditable.js, javascript/jquery.jeditable.mini.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "medium"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jeditable-ajaxupload-addon",
+      "name": "jeditable-ajaxupload-addon",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.appelsiini.net/projects/jeditable"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.jeditable.ajaxupload.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "medium"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "Official Jeditable companion addon (Mika Tuupola); depends at runtime on a separate AjaxFileUpload plugin (see that component) - no independent version or PURL."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jeditable-masked-addon",
+      "name": "jeditable-masked-addon",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.appelsiini.net/projects/jeditable"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.jeditable.masked.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "medium"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "Official Jeditable companion addon; references Josh Bush's Masked Input plugin as a runtime dependency, which is NOT vendored in this module."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jeditable-datepicker-addon-vincent",
+      "name": "jeditable-datepicker-addon-vincent",
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.jeditable.datepicker.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "medium"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "Third-party single-file contribution by Enjalbert Vincent (WinWinWeb), distinct author from the Jeditable core plugin - no viable PURL."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:ajaxfileupload",
+      "name": "ajaxfileupload",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.phpletter.com/Our-Projects/AjaxFileUpload/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.ajaxfileupload.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "low"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "No header or license in the vendored file itself; attribution inferred from a comment in a different file (jquery.jeditable.ajaxupload.js) that depends on it. No viable PURL."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery-metadata",
+      "name": "jquery-metadata",
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.metadata.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "low"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "No @version tag, only a copyright year (~2006-2009 era). Do not pin a version without diffing against upstream."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery-sortelements",
+      "name": "jquery-sortelements",
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.sortElements.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "low"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "Single-function community micro-utility, no attribution or version in this copy, never packaged - no viable PURL."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:tablecloth",
+      "name": "tablecloth",
+      "version": "1.0.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/bwsewell/tablecloth"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.tablecloth.js, css/tablecloth.css"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "medium"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:tablesorter",
+      "name": "tablesorter",
+      "version": "2.0.5b",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/tablesorter@2.0.5",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://mottie.github.io/tablesorter/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.tablesorter.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        },
+        {
+          "name": "jahia:purlCaveat",
+          "value": "Vendored version string has a 'b' (beta) suffix that npm's semver would reject; PURL is pinned to the numeric 2.0.5 base."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery-treeview",
+      "name": "jquery-treeview",
+      "version": "1.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/jquery-treeview@1.4",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/jzaefferer/jquery-treeview"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.treeview.min.js, css/jquery.treeview.css, css/images/treeview-*.gif"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery-treeview-async-jahia-fork",
+      "name": "jquery-treeview-async-jahia-fork",
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.treeview.async.jahia.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        }
+      ],
+      "pedigree": {
+        "notes": "Based on Jorn Zaefferer's 'Async Treeview 0.1' but heavily modified by Jahia - this is a fork, not a clean vendor drop, so it is not pinned to any upstream PURL."
+      }
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery-validation",
+      "name": "jquery-validation",
+      "version": "1.19.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/jquery-validation@1.19.5",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://jqueryvalidation.org"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.validate.js, javascript/jquery.validate.min.js"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:spectrum-colorpicker",
+      "name": "spectrum-colorpicker",
+      "version": "1.3.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/spectrum-colorpicker@1.3.2",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/bgrins/spectrum"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/spectrum.js, css/spectrum.css"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:thickbox",
+      "name": "thickbox",
+      "version": "3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/thickbox-compressed.js, css/thickbox.css, css/images/thickbox/**"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "Long-dead Cody Lindley project, never had any package-manager presence - no viable PURL. Vendored file is itself minified/packed."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jquery-ui-timepicker-addon",
+      "name": "jquery-ui-timepicker-addon",
+      "version": "1.4.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/jquery-ui-timepicker-addon@1.4.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://trentrichardson.com/examples/timepicker/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/timepicker.js, css/timepicker.css"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:jcrop",
+      "name": "jcrop",
+      "version": "0.9.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/jcrop@0.9.12",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/tapmodo/Jcrop"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/jquery.Jcrop.js, javascript/jquery.Jcrop.min.js, css/jquery.Jcrop.css, css/jquery.Jcrop.min.css, css/images/Jcrop/**"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:clippy.js",
+      "name": "clippy.js",
+      "purl": "pkg:github/mojombo/clippy",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/pi0/clippyjs"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "javascript/clippy/jquery.clippy.js, javascript/clippy/jquery.clippy.min.js, javascript/clippy/clippy.swf"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "medium"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "Never published as an npm package; no version marker in the vendored copy."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:font-awesome",
+      "name": "font-awesome",
+      "version": "4.2.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "OFL-1.1 (font) / MIT (CSS)"
+          }
+        }
+      ],
+      "purl": "pkg:npm/font-awesome@4.2.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://fontawesome.com"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "css/admin-font-awesome-v4.2.0.css, css/admin-font-awesome-v4.2.0.min.css, css/font/fontawesome-*"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:960-grid-system",
+      "name": "960-grid-system",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://960.gs"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "css/960.css, css/960-fluid-admin-jahia.css"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "medium"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "Generic CSS grid framework, not distributed through any JS package ecosystem - no viable PURL."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:flowplayer",
+      "name": "flowplayer",
+      "version": "3.2.6",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://flowplayer.org"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "swf/flowplayer-3.2.6.swf"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "Flash/SWF binary - EOL technology with no package-manager presence. Worth flagging for removal, not just SBOM tracking."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "assets-vendored:flowplayer-controls",
+      "name": "flowplayer-controls",
+      "version": "3.2.4",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://flowplayer.org"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:vendoredSourceFiles",
+          "value": "swf/flowplayer.controls-3.2.4.swf"
+        },
+        {
+          "name": "jahia:sbomConfidence",
+          "value": "high"
+        },
+        {
+          "name": "jahia:notes",
+          "value": "Flash/SWF binary - EOL technology with no package-manager presence."
+        }
+      ]
+    }
+  ]
+}
