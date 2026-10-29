@@ -75,6 +75,7 @@
         <jahia-static-resources>/css,/icons,/javascript,/swf</jahia-static-resources>
         <jahia-module-signature>MCwCFAgDJIqa26WRfsqcjUw7unFGIJqQAhQl1Fi26pgM9Wz3a0bCyVtxYlUJLw==</jahia-module-signature>
         <require-capability>osgi.extender;filter:="(osgi.extender=org.jahia.bundles.blueprint.extender.config)"</require-capability>
+        <vendored-js-bom.plugin.version>6.15.0-SNAPSHOT</vendored-js-bom.plugin.version>
     </properties>
 
     <repositories>
@@ -131,6 +132,60 @@
                     <outputFormat>json</outputFormat>
                     <outputName>java-bom.cdx</outputName>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.jahia.server</groupId>
+                <artifactId>vendored-js-bom-maven-plugin</artifactId>
+                <version>${vendored-js-bom.plugin.version}</version>
+                <configuration>
+                    <!-- Shared by both goals: files to declare and what a jahia:source-folder covers -->
+                    <fileExtensions>js,css,swf</fileExtensions>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>validate-vendored-js-manifest</id>
+                        <goals>
+                            <goal>validate-vendored-js-manifest</goal>
+                        </goals>
+                        <configuration>
+                            <vendoredDirectories>src/main/resources/javascript,src/main/resources/css,src/main/resources/swf</vendoredDirectories>
+                            <!-- Jahia's own files, not third-party code -->
+                            <excludePatterns>
+                                src/main/resources/javascript/jquery.jahia.js,
+                                src/main/resources/javascript/jquery.jahia.min.js,
+                                src/main/resources/javascript/treeselector.js,
+                                src/main/resources/javascript/workInProgress.js,
+                                src/main/resources/javascript/codemirror.mode.jsp.js,
+                                src/main/resources/javascript/jquery.cuteTime.settings.fr.js,
+                                src/main/resources/javascript/jquery.fancybox.load.js,
+                                src/main/resources/javascript/jquery.jeditable.ckeditor.js,
+                                src/main/resources/javascript/jquery.jeditable.treeItemSelector.js,
+                                src/main/resources/javascript/datatables/dataTables.bootstrap-ext.js,
+                                src/main/resources/javascript/i18n/contributedefault-,
+                                src/main/resources/javascript/i18n/jquery.dataTables-,
+                                src/main/resources/javascript/i18n/jquery.ui.datepicker-en.js,
+                                src/main/resources/css/01web.css,
+                                src/main/resources/css/admin-server-settings.css,
+                                src/main/resources/css/admin-site-settings.css,
+                                src/main/resources/css/contentlist.css,
+                                src/main/resources/css/files.css,
+                                src/main/resources/css/formbuilder.css,
+                                src/main/resources/css/formcontribute.css,
+                                src/main/resources/css/jahia.fancybox-form.css,
+                                src/main/resources/css/jquery-ui.smoothness-jahia.css,
+                                src/main/resources/css/portlets.css,
+                                src/main/resources/css/shortcuts-inline.css,
+                                src/main/resources/css/datatables/css/bootstrap-theme.css
+                            </excludePatterns>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>generate-vendored-js-bom</id>
+                        <goals>
+                            <goal>generate-vendored-js-bom</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
