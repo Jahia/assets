@@ -1,0 +1,1817 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/jquery-ui@1.14.1",
+      "name": "jquery-ui",
+      "version": "1.14.1",
+      "purl": "pkg:npm/jquery-ui@1.14.1",
+      "cpe": "cpe:2.3:a:jqueryui:jquery_ui:1.14.1:*:*:*:*:*:*:*",
+      "supplier": {
+        "name": "OpenJS Foundation"
+      },
+      "copyright": "Copyright OpenJS Foundation and other contributors",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "pedigree": {
+        "notes": "JS unmodified. CSS: Jahia-edited base theme (layout helpers section marked 'CUSTOM EDITION', IE8 filter syntax, slider handle cursor:default, some -ms-filter/box-shadow lines removed). CSS contains no executable code."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery-ui.min.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/jquery-ui.smoothness.css"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:jquery-ui-datepicker-i18n@1.8.14",
+      "name": "jquery-ui datepicker locales",
+      "version": "1.8.14",
+      "supplier": {
+        "name": "OpenJS Foundation (jQuery UI project; locale files contributed by translators named in each header)"
+      },
+      "copyright": "Copyright 2011, AUTHORS.txt (http://jqueryui.com/about) - jQuery UI 1.8.x project notice; locale files only carry 'Written by <author>' lines",
+      "licenses": [
+        {
+          "expression": "MIT OR GPL-2.0-only"
+        }
+      ],
+      "description": "Datepicker locale data files from jQuery UI 1.8.14 (data only, no widget code); deliberately without purl/CPE so that jQuery UI 1.8.x code CVEs are not reported for them.",
+      "pedigree": {
+        "ancestors": [
+          {
+            "type": "library",
+            "name": "jquery-ui",
+            "version": "1.8.14",
+            "purl": "pkg:npm/jquery-ui@1.8.14"
+          }
+        ],
+        "notes": "jquery-ui-i18n.js is the concatenation of the locale files; jquery.ui.datepicker-fr-CH.js.txt is a Latin-1 copy of the fr-CH locale."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery-ui-i18n.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-af.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-ar-DZ.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-ar.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-az.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-bg.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-bs.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-ca.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-cs.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-da.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-de.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-el.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-en-AU.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-en-GB.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-en-NZ.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-eo.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-es.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-et.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-eu.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-fa.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-fi.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-fo.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-fr-CH.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-fr.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-gl.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-he.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-hr.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-hu.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-hy.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-id.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-is.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-it.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-ja.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-ko.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-kz.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-lt.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-lv.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-ml.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-ms.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-nl.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-no.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-pl.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-pt-BR.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-pt.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-rm.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-ro.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-ru.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-sk.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-sl.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-sq.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-sr-SR.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-sr.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-sv.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-ta.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-th.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-tj.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-tr.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-uk.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-vi.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-zh-CN.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-zh-HK.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-zh-TW.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/i18n/jquery.ui.datepicker-fr-CH.js.txt"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/bootstrap@2.3.1",
+      "name": "bootstrap",
+      "version": "2.3.1",
+      "purl": "pkg:npm/bootstrap@2.3.1",
+      "cpe": "cpe:2.3:a:getbootstrap:bootstrap:2.3.1:*:*:*:*:*:*:*",
+      "supplier": {
+        "name": "Twitter, Inc."
+      },
+      "copyright": "Copyright 2012 Twitter, Inc.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "description": "Bootstrap 2.3.1 JavaScript plugins (admin-bootstrap.js, the 13 plugin files concatenated). Not published on npm in 2.x, but npm purl ranges and the NVD CPE still match its advisories.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/admin-bootstrap.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:bootstrap-css@2.3.2",
+      "name": "bootstrap (CSS only)",
+      "version": "2.3.2",
+      "supplier": {
+        "name": "Twitter, Inc."
+      },
+      "copyright": "Copyright 2012 Twitter, Inc",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "description": "Customized Bootstrap 2.3.2 CSS build; no JavaScript, so no purl/CPE (Bootstrap CVEs concern its JavaScript).",
+      "pedigree": {
+        "ancestors": [
+          {
+            "type": "library",
+            "name": "bootstrap",
+            "version": "2.3.2",
+            "purl": "pkg:npm/bootstrap@2.3.2"
+          }
+        ],
+        "notes": "Customized build (customizer variables), not an official dist file; images re-encoded. CSS/images only, no JS."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/css/admin-bootstrap.css"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:bootstrap-css@3.2.0",
+      "name": "bootstrap (CSS only)",
+      "version": "3.2.0",
+      "supplier": {
+        "name": "Twitter, Inc."
+      },
+      "copyright": "Copyright 2011-2014 Twitter, Inc. (upstream 3.2.0 banner; not present in the vendored files)",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "description": "Customized Bootstrap 3.2.0 CSS build and Glyphicons font; no JavaScript, so no purl/CPE.",
+      "pedigree": {
+        "ancestors": [
+          {
+            "type": "library",
+            "name": "bootstrap",
+            "version": "3.2.0",
+            "purl": "pkg:npm/bootstrap@3.2.0"
+          }
+        ],
+        "notes": "Customized LESS build with Jahia variable overrides."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/css/admin-bootstrap-v3.2.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/admin-bootstrap-v3.2.min.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/font/glyphicons-halflings-regular.eot"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/font/glyphicons-halflings-regular.svg"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/font/glyphicons-halflings-regular.ttf"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/font/glyphicons-halflings-regular.woff"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/font-awesome@4.2.0",
+      "name": "font-awesome",
+      "version": "4.2.0",
+      "purl": "pkg:npm/font-awesome@4.2.0",
+      "supplier": {
+        "name": "Dave Gandy (Font Awesome)"
+      },
+      "copyright": "Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome",
+      "licenses": [
+        {
+          "expression": "OFL-1.1 AND MIT"
+        }
+      ],
+      "description": "No CPE on purpose: NVD's fontawesome:font_awesome is the WordPress plugin.",
+      "pedigree": {
+        "notes": "Only the font URL path in @font-face was changed."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/css/admin-font-awesome-v4.2.0.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/admin-font-awesome-v4.2.0.min.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/font/FontAwesome.otf"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/font/fontawesome-webfont.eot"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/font/fontawesome-webfont.svg"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/font/fontawesome-webfont.ttf"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/font/fontawesome-webfont.woff"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:videojs-font@4.3.0",
+      "name": "video.js (icon font only)",
+      "version": "4.3.0",
+      "supplier": {
+        "name": "Brightcove, Inc. (video.js project); SVG metadata says generated by IcoMoon"
+      },
+      "copyright": "Copyright 2013 Brightcove, Inc.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "description": "Only the video.js 4.3.0 icon font; the player itself lives in the 'default' module.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/css/font/vjs.eot"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/font/vjs.svg"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/font/vjs.ttf"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/font/vjs.woff"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/codemirror@3.19.0",
+      "name": "codemirror",
+      "version": "3.19.0",
+      "purl": "pkg:npm/codemirror@3.19.0",
+      "cpe": "cpe:2.3:a:codemirror:codemirror:3.19.0:*:*:*:*:*:*:*",
+      "supplier": {
+        "name": "Marijn Haverbeke"
+      },
+      "copyright": "Copyright (C) 2013 by Marijn Haverbeke <marijnh@gmail.com> and others",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "description": "CodeMirror 3.19.0 distribution folder, Jahia's minified bundle of it (codemirror.jahia.min.js) and CodeMirror CSS/themes from older 3.0x/2.3x releases.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/codemirror.jahia.min.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/codemirror.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/ambiance-mobile.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/ambiance.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/blackboard.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/cobalt.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/eclipse.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/elegant.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/erlang-dark.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/lesser-dark.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/monokai.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/neat.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/night.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/rubyblue.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/solarized.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/twilight.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/vibrant-ink.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/codemirror/theme/xq-dark.css"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:source-folder",
+          "value": "src/main/resources/javascript/codemirror/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/datatables.net@1.13.11",
+      "name": "datatables.net",
+      "version": "1.13.11",
+      "purl": "pkg:npm/datatables.net@1.13.11",
+      "cpe": "cpe:2.3:a:sprymedia:datatables:1.13.11:*:*:*:*:*:*:*",
+      "supplier": {
+        "name": "SpryMedia Ltd"
+      },
+      "copyright": "Copyright 2008-2024 SpryMedia Ltd",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/datatables/jquery.dataTables.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/datatables/jquery.dataTables.min.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/datatables.net-plugins@1.13.6",
+      "name": "datatables.net-plugins",
+      "version": "1.13.6",
+      "purl": "pkg:npm/datatables.net-plugins@1.13.6",
+      "supplier": {
+        "name": "SpryMedia Ltd"
+      },
+      "copyright": "Copyright SpryMedia Ltd, David Konrad",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "description": "sorting/diacritics-sort.js, vendored as dataTables.i18n-sorting-ext.js.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/datatables/dataTables.i18n-sorting-ext.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/atmosphere.js@2.2.12",
+      "name": "atmosphere.js",
+      "version": "2.2.12",
+      "purl": "pkg:npm/atmosphere.js@2.2.12",
+      "supplier": {
+        "name": "Async-IO.org"
+      },
+      "copyright": "Copyright 2015 Async-IO.org",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "pedigree": {
+        "notes": "Jahia patch QABACKLOG-747 (2015-07-29, git ad0a3e2): avoid re-sending the SSE request while the document is unloading on Firefox (skip reconnect when atmosphere._beforeUnloadState). Present in both files."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/atmosphere.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/atmosphere-min.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/jquery-validation@1.19.5",
+      "name": "jquery-validation",
+      "version": "1.19.5",
+      "purl": "pkg:npm/jquery-validation@1.19.5",
+      "cpe": "cpe:2.3:a:jqueryvalidation:jquery_validation:1.19.5:*:*:*:*:*:*:*",
+      "supplier": {
+        "name": "Jörn Zaefferer"
+      },
+      "copyright": "Copyright (c) 2022 Jörn Zaefferer",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.validate.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.validate.min.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/spectrum-colorpicker@1.3.2",
+      "name": "spectrum-colorpicker",
+      "version": "1.3.2",
+      "purl": "pkg:npm/spectrum-colorpicker@1.3.2",
+      "supplier": {
+        "name": "Brian Grinstead"
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/spectrum.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/spectrum.css"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/jquery-ui-timepicker-addon@1.4.1",
+      "name": "jquery-ui-timepicker-addon",
+      "version": "1.4.1",
+      "purl": "pkg:npm/jquery-ui-timepicker-addon@1.4.1",
+      "supplier": {
+        "name": "Trent Richardson"
+      },
+      "copyright": "Copyright (c) 2013 Trent Richardson",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "pedigree": {
+        "notes": "CSS only: margin tweak 40%->45% for .ui-timepicker-div dl dd and .ui-timepicker-rtl dl dd. JS unmodified."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/timepicker.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/timepicker.css"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/bootstrap-filestyle@1.0.1",
+      "name": "bootstrap-filestyle",
+      "version": "1.0.1",
+      "purl": "pkg:npm/bootstrap-filestyle@1.0.1",
+      "supplier": {
+        "name": "Markus Vinicius da Silva Lima"
+      },
+      "copyright": "Copyright (c) 2013 Markus Vinicius da Silva Lima",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/bootstrap-filestyle.min.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/bootstrap-switch@1.3.0",
+      "name": "bootstrap-switch",
+      "version": "1.3.0",
+      "purl": "pkg:npm/bootstrap-switch@1.3.0",
+      "supplier": {
+        "name": "Mattia Larentis"
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "description": "Header says v1.3; code matches an upstream commit between v1.3.0 and v1.3.1.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/bootstrapSwitch.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/bootstrapSwitch.css"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:sbom-confidence",
+          "value": "medium"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:fancybox@2.1.5",
+      "name": "fancybox",
+      "version": "2.1.5",
+      "purl": "pkg:github/fancyapps/fancybox@v2.1.5",
+      "supplier": {
+        "name": "Janis Skarnelis (fancyApps)"
+      },
+      "copyright": "Copyright 2012 Janis Skarnelis - janis@fancyapps.com",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC-BY-NC-3.0"
+          }
+        }
+      ],
+      "description": "fancyBox 2.1.5 core, helpers and CSS. npm 'fancybox' 2.1.5 is a modified third-party republish, hence the GitHub purl.",
+      "pedigree": {
+        "notes": "jquery.fancybox.js line ~1712 (overlay helper create()): '<div class=\"fancybox-overlay\">' changed to '<div class=\"fancybox-overlay\" style=\"z-index: 2000000\">'. CSS: url('fancybox_sprite.png') etc. rewritten to url('images/fancybox/...') in jquery.fancybox.css (6 URLs) and jquery.fancybox-buttons.css (1 URL). The helpers are part of the official fancyBox 2.1.5 release (source/helpers/ at tag v2.1.5), so they belong to this component, not separate ones. css/images/fancybox/ also contains fancyBox 1.x assets (fancy_close.png, fancy_loading.png, fancy_nav_*.png, fancy_shadow_*.png, fancy_title_*.png, fancybox.png, fancybox-x.png, fancybox-y.png) that are not referenced by any CSS in the module - leftovers of a fancyBox 1.3.x install (fancyBox 1.3.x was MIT/GPL)."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.fancybox.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.fancybox-buttons.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.fancybox-media.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.fancybox-thumbs.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/jquery.fancybox.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/jquery.fancybox-buttons.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/jquery.fancybox-thumbs.css"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:fancybox-pack@2.1.4",
+      "name": "fancybox (packed build)",
+      "version": "2.1.4",
+      "purl": "pkg:github/fancyapps/fancybox@v2.1.4",
+      "supplier": {
+        "name": "Janis Skarnelis (fancyApps)"
+      },
+      "copyright": "fancyBox v2.1.4 fancyapps.com (header); Copyright 2012 Janis Skarnelis",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC-BY-NC-3.0"
+          }
+        }
+      ],
+      "description": "jquery.fancybox.pack.js is fancyBox 2.1.4 (older than the 2.1.5 source file, without Jahia's z-index change).",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.fancybox.pack.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:jquery-colorbox@1.3.17.2",
+      "name": "jquery-colorbox",
+      "version": "1.3.17.2",
+      "purl": "pkg:npm/jquery-colorbox@1.3.17",
+      "supplier": {
+        "name": "Jack Moore"
+      },
+      "copyright": "Copyright (c) 2011 Jack Moore - jack@colorpowered.com",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "description": "purl version 1.3.17 because npm semver cannot express the 4th segment of 1.3.17.2.",
+      "pedigree": {
+        "notes": "CSS only: image URLs rewritten from images/... to images/colorbox/...; z-index of #colorbox,#cboxOverlay,#cboxWrapper changed from 9999 to 1100. JS unmodified."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.colorbox.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/jquery.colorbox.css"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:jcrop@0.9.12",
+      "name": "jcrop",
+      "version": "0.9.12",
+      "purl": "pkg:github/tapmodo/jcrop@v0.9.12",
+      "supplier": {
+        "name": "Tapmodo Interactive LLC"
+      },
+      "copyright": "Copyright (c) 2008-2013 Tapmodo Interactive LLC",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.Jcrop.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.Jcrop.min.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/jquery.Jcrop.css"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/jquery.Jcrop.min.css"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/block-ui@2.70.0",
+      "name": "block-ui",
+      "version": "2.70.0",
+      "purl": "pkg:npm/block-ui@2.70.0",
+      "supplier": {
+        "name": "M. Alsup"
+      },
+      "copyright": "Copyright (c) 2007-2013 M. Alsup",
+      "licenses": [
+        {
+          "expression": "MIT OR GPL-2.0-only"
+        }
+      ],
+      "description": "malsup's BlockUI; on npm as 'block-ui' (the 'jquery-blockui' package is an unrelated fork).",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.blockUI.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/jquery-form@3.19.0",
+      "name": "jquery-form",
+      "version": "3.19-jahia.1",
+      "purl": "pkg:npm/jquery-form@3.19.0",
+      "supplier": {
+        "name": "M. Alsup (jquery-form project); patched by Jahia"
+      },
+      "copyright": "Copyright 2006 M. Alsup",
+      "licenses": [
+        {
+          "expression": "MIT OR GPL-2.0-only"
+        }
+      ],
+      "description": "jquery-form 3.19 with a Jahia backport; the purl names upstream 3.19.0 so that advisories still match.",
+      "pedigree": {
+        "ancestors": [
+          {
+            "type": "library",
+            "name": "jquery-form",
+            "version": "3.19.0",
+            "purl": "pkg:npm/jquery-form@3.19.0"
+          }
+        ],
+        "notes": "Backport of jquery-form/form PR #586 (huntr.dev bounty by Mik317; same patch re-submitted as PR #611 - both still OPEN/unmerged upstream, so no upstream release contains it): (1) in ajaxSubmit success handler, when fn == 'html' (options.target without replaceTarget) the response is HTML-escaped before insertion: data = $.parseHTML($('<div>').text(data).html()); (2) the fallback parseJSON used when $.parseJSON is missing no longer does window['eval']('(' + s + ')') but logs 'jquery.parseJSON is undefined' and returns null. Coverage: fixes the issue described in jquery-form/form#464 for the default 'html' path; it does NOT sanitize the options.replaceTarget=true path ($(target).replaceWith(data) still receives raw response), and dataType:'script' / javascript responses are still executed via $.globalEval by design. Side effect: HTML responses loaded into a target are now rendered as text (functional change). $.parseHTML requires jQuery >= 1.8."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.form.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.form.min.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/jquery.cookie@1.0.0",
+      "name": "jquery.cookie",
+      "version": "1.0",
+      "purl": "pkg:npm/jquery.cookie@1.0.0",
+      "cpe": "cpe:2.3:a:jquery.cookie_project:jquery.cookie:1.0:*:*:*:*:*:*:*",
+      "supplier": {
+        "name": "Klaus Hartl"
+      },
+      "copyright": "Copyright (c) 2010 Klaus Hartl (stilbuero.de)",
+      "licenses": [
+        {
+          "expression": "MIT OR GPL-2.0-only"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.cookie.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:jquery-metadata@2.0",
+      "name": "jquery-metadata",
+      "version": "2.0",
+      "purl": "pkg:github/jquery-archive/jquery-metadata@d6e07655aa18e75002ac76f7f05f40bbdb403792",
+      "supplier": {
+        "name": "John Resig, Yehuda Katz, Jörn Zaefferer, Paul McLanahan (jQuery project)"
+      },
+      "copyright": "Copyright (c) 2006 John Resig, Yehuda Katz, Jörn Zaefferer, Paul McLanahan",
+      "licenses": [
+        {
+          "expression": "MIT OR GPL-2.0-only"
+        }
+      ],
+      "description": "Never published to a package registry; purl pins the upstream commit.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.metadata.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/jquery-treeview@1.4.0",
+      "name": "jquery-treeview",
+      "version": "1.4",
+      "purl": "pkg:npm/jquery-treeview@1.4.0",
+      "supplier": {
+        "name": "Jörn Zaefferer"
+      },
+      "copyright": "Copyright (c) 2007 Jörn Zaefferer",
+      "licenses": [
+        {
+          "expression": "MIT OR GPL-2.0-only"
+        }
+      ],
+      "description": "Minified 1.4 file; no upstream minified 1.4 artifact exists to compare byte by byte.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.treeview.min.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/jquery.treeview.css"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:sbom-confidence",
+          "value": "medium"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:jquery-treeview-async-jahia",
+      "name": "jquery-treeview-async (Jahia fork)",
+      "supplier": {
+        "name": "Jahia Solutions Group SA"
+      },
+      "copyright": "Copyright (c) 2007 Jörn Zaefferer",
+      "licenses": [
+        {
+          "expression": "MIT OR GPL-2.0-only"
+        }
+      ],
+      "pedigree": {
+        "ancestors": [
+          {
+            "type": "library",
+            "name": "Async Treeview",
+            "version": "0.1"
+          }
+        ],
+        "notes": "Jahia rewrite of Jörn Zaefferer's Async Treeview 0.1 (getJSON loading, preview spans, radio selection callback); inserts node text into HTML unescaped."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.treeview.async.jahia.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:tablesorter@2.0.5b",
+      "name": "tablesorter",
+      "version": "2.0.5b",
+      "purl": "pkg:github/christianbach/tablesorter@6b998d9dea1bb7e98bdc0e3ce4a2504a970c2140",
+      "supplier": {
+        "name": "Christian Bach"
+      },
+      "copyright": "Copyright (c) 2007 Christian Bach",
+      "licenses": [
+        {
+          "expression": "MIT OR GPL-2.0-only"
+        }
+      ],
+      "description": "Christian Bach's original tablesorter (no release tags upstream; purl pins the commit). npm 'tablesorter' is Mottie's fork.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.tablesorter.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:jquery-autocomplete@1.2.2",
+      "name": "jquery-autocomplete (agarzola fork)",
+      "version": "1.2.2",
+      "purl": "pkg:github/agarzola/jqueryautocompleteplugin@cae3258b0a8ae05ae96dd95f8ee2cbb970a61ac2",
+      "supplier": {
+        "name": "Alfonso Gómez-Arzola (fork of Jörn Zaefferer's jQuery Autocomplete 1.1)"
+      },
+      "copyright": "Copyright (c) 2009 Jörn Zaefferer",
+      "licenses": [
+        {
+          "expression": "MIT OR GPL-2.0-only"
+        }
+      ],
+      "description": "Alfonso Gómez-Arzola's fork of Jörn Zaefferer's jQuery Autocomplete; npm 'jquery-autocomplete' is an unrelated project.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.autocomplete.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.autocomplete.min.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.autocomplete.pack.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/jquery.autocomplete.css"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/jquery-jeditable@1.7.3",
+      "name": "jquery-jeditable",
+      "version": "1.7.3",
+      "purl": "pkg:npm/jquery-jeditable@1.7.3",
+      "supplier": {
+        "name": "Mika Tuupola"
+      },
+      "copyright": "Copyright (c) 2006-2013 Mika Tuupola, Dylan Verheul",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "pedigree": {
+        "notes": "ajaxupload addon modified by Jahia: submit selector 'button:submit' -> \"button[type='submit']\", abort if no file chosen, settings.target may be a function, dataType 'html' -> 'json', no longer writes response into the element but calls settings.callback(data,status,original), error alert uses contributionI18n['error']."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.jeditable.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.jeditable.mini.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.jeditable.masked.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.jeditable.ajaxupload.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:jeditable-datepicker",
+      "name": "jeditable-datepicker (Enjalbert Vincent)",
+      "supplier": {
+        "name": "Enjalbert Vincent (WinWinWeb)"
+      },
+      "copyright": "Copyright (C) 2009 Enjalbert Vincent (WinWinWeb)",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "pedigree": {
+        "notes": "Rewritten for the jQuery UI datepicker, adds a datetimepicker input type."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.jeditable.datepicker.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:ajaxfileupload",
+      "name": "ajaxfileupload (PHPLetter)",
+      "supplier": {
+        "name": "PHPLetter"
+      },
+      "description": "No version and no package registry.",
+      "pedigree": {
+        "notes": "Versus the common PHPLetter variant: every jQuery.handleError(...) call (removed in jQuery 1.5) replaced with s.error && s.error.call(s.context, ...) + $.event.trigger('ajaxError', ...); JSON parsing changed to eval('data = ' + data.substring(first '{', last '}'+1)) to strip wrapper markup. Unclear whether these edits are Jahia's or from an intermediate copy (both patches circulated widely)."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.ajaxfileupload.js"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:sbom-confidence",
+          "value": "medium"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:thickbox@3",
+      "name": "thickbox",
+      "version": "3",
+      "supplier": {
+        "name": "Cody Lindley"
+      },
+      "copyright": "Copyright (c) 2007 cody lindley",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "description": "Thickbox 3 by Cody Lindley; never published to a package registry.",
+      "pedigree": {
+        "notes": "tb_pathToImage changed from \"images/loadingAnimation.gif\" to contextJsParameters.contextPath+\"/modules/assets/css/images/thickbox/loadingAnimation.gif\". thickbox.css references macFFBgHack.png, which is not shipped."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/thickbox-compressed.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/thickbox.css"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:eyecon-datepicker-css",
+      "name": "eyecon datepicker (CSS only)",
+      "supplier": {
+        "name": "Stefan Petre (eyecon.ro)"
+      },
+      "licenses": [
+        {
+          "expression": "MIT OR GPL-2.0-only"
+        }
+      ],
+      "description": "Stylesheet of Stefan Petre's DatePicker; its JavaScript is not in the module (unused leftover).",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/css/datepicker.css"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:clippy-jquery",
+      "name": "clippy-jquery",
+      "purl": "pkg:github/jimmysawczuk/clippy-jquery@6ccef0b6727a1ef7e0a2978fa2af6c106a304840",
+      "supplier": {
+        "name": "Jimmy Sawczuk"
+      },
+      "copyright": "Copyright (C) 2011 by Jimmy Sawczuk (README at that commit; the JS file header has no copyright line)",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "description": "Untagged upstream commit 6ccef0b (2012-04-11).",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/clippy/jquery.clippy.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/clippy/jquery.clippy.min.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:clippy-swf",
+      "name": "clippy (Flash)",
+      "purl": "pkg:github/mojombo/clippy@c6f7e39f70a1f5469764d1bd9cdb9070bcc31199",
+      "supplier": {
+        "name": "Tom Preston-Werner (mojombo)"
+      },
+      "copyright": "Copyright (c) 2008 Tom Preston-Werner",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "description": "clippy.swf from mojombo/clippy (only build, commit c6f7e39); no ExternalInterface calls.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/clippy/clippy.swf"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:jquery-cutetime@1.1.4",
+      "name": "jquery.cuteTime",
+      "version": "1.1.4",
+      "purl": "pkg:github/theproductguy/CuteTime@5092e1f3cc05caf18a501c7b8ac5dfe468f7e009",
+      "supplier": {
+        "name": "Jeremy Horn (The Product Guy, tpgblog.com)"
+      },
+      "copyright": "Copyright (c) 2009 Jeremy Horn- jeremydhorn(at)gmail(dot)c0m | http://tpgblog.com",
+      "licenses": [
+        {
+          "expression": "MIT OR GPL-1.0-or-later"
+        }
+      ],
+      "description": "Code is 1.1.4 (upstream commit 5092e1f); the header still says 1.1.3.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.cuteTime.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:jquery-defer@1.1",
+      "name": "jquery.defer",
+      "version": "1.1",
+      "purl": "pkg:github/jollytoad/jquery.plugins@7b87f6c1782afa9318864a00804dd71293976a74",
+      "supplier": {
+        "name": "Adaptavist.com Ltd (author Mark Gibson, GitHub jollytoad)"
+      },
+      "copyright": "Copyright (c) 2010 Adaptavist.com Ltd",
+      "licenses": [
+        {
+          "expression": "MIT OR GPL-1.0-or-later"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.defer.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:tablecloth@1.0.0",
+      "name": "tablecloth",
+      "version": "1.0.0",
+      "purl": "pkg:github/bwsewell/tablecloth@v1.0.0",
+      "supplier": {
+        "name": "Brian Sewell"
+      },
+      "copyright": "copyright brian sewell (JS header); LICENSE: Copyright (c) 2012 Brian Sewell.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "pedigree": {
+        "notes": "tablecloth.css: background-image paths changed '../img/asc.gif|desc.gif|asc_light.gif|desc_light.gif' -> 'img/...' to fit the module's css/img folder. No functional change."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.tablecloth.js"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/css/tablecloth.css"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:animatedcollapse@2.4",
+      "name": "animatedcollapse (Dynamic Drive)",
+      "version": "2.4",
+      "supplier": {
+        "name": "Dynamic Drive (dynamicdrive.com)"
+      },
+      "copyright": "//** Animated Collapsible DIV v2.0- (c) Dynamic Drive DHTML code library: http://www.dynamicdrive.com.",
+      "licenses": [
+        {
+          "license": {
+            "name": "Dynamic Drive Terms of Use",
+            "url": "http://www.dynamicdrive.com/notice.htm"
+          }
+        }
+      ],
+      "pedigree": {
+        "notes": "Jahia appended a public 'reinit' method (about 70 lines) after preloadimage(): a copy of the body of upstream init() without the jQuery(document).ready wrapper, so the collapsible DIVs and rel=\"expand[...]\" toggler links can be re-scanned after AJAX content loads; it also binds the window unload -> uninit handler. No upstream lines were changed; file lacks final newline."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/animatedcollapse.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:ajaxreplace",
+      "name": "jquery.identify + jquery.reload (ajaxreplace.js)",
+      "supplier": {
+        "name": "Jp Siffert (plugins.jquery.com user 'talion'); modified by Jahia"
+      },
+      "description": "identify 1.0 and reload 1.0.1 by Jp Siffert, combined and modified by Jahia.",
+      "pedigree": {
+        "notes": "identify: var-scoping fix and formatting only. reload: substantially rewritten as reloadCSS for Jahia's AJAX area reloading. replace/jreplace: new Jahia code (uses eval(callback) on a caller-supplied string)."
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/ajaxreplace.js"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:sbom-confidence",
+          "value": "medium"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:jquery-sortelements@0.11",
+      "name": "jquery.sortElements",
+      "version": "0.11",
+      "purl": "pkg:github/padolsey/jQuery-Plugins@5f06ec50d26f94d034f3eaeaef607c82fc5a8c09",
+      "supplier": {
+        "name": "James Padolsey"
+      },
+      "copyright": "James Padolsey",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "pedigree": {
+        "notes": "Author/version header lines stripped; one comment typo fixed. No code change. (Consider restoring the author line for attribution.)"
+      },
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/javascript/jquery.sortElements.js"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:variable-grid-system",
+      "name": "variable-grid-system (960.gs based)",
+      "supplier": {
+        "name": "spry-soft.com (Variable Grid System generator), based on 960 Grid System by Nathan Smith"
+      },
+      "licenses": [
+        {
+          "expression": "MIT OR GPL-3.0-only"
+        }
+      ],
+      "description": "Output of the spry-soft Variable Grid System generator, based on 960.gs; no version.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/css/960.css"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:fluid960gs@1.0.5",
+      "name": "fluid960gs",
+      "version": "1.0.5",
+      "purl": "pkg:github/bauhouse/fluid960gs@1.0.5",
+      "supplier": {
+        "name": "Stephen Bau (Fluid 960 Grid System), based on 960 Grid System by Nathan Smith"
+      },
+      "licenses": [
+        {
+          "expression": "MIT OR GPL-3.0-only"
+        }
+      ],
+      "description": "Unmodified css/grid.css of Fluid 960 Grid System (identical in 1.0.2-1.0.5).",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/css/960-fluid-admin-jahia.css"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:flowplayer-flash@3.2.6",
+      "name": "flowplayer-flash",
+      "version": "3.2.6",
+      "cpe": "cpe:2.3:a:flowplayer:flowplayer_flash:3.2.6:*:*:*:*:*:*:*",
+      "supplier": {
+        "name": "Flowplayer Ltd / Flowplayer Oy"
+      },
+      "copyright": "Copyright (c) 2008-2011 Flowplayer Oy (string embedded in SWF)",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-or-later with Flowplayer additional terms (attribution, trademark)",
+            "url": "https://flowplayer.com/license"
+          }
+        }
+      ],
+      "description": "Flowplayer Flash 3.2.6 (end-of-life Flash). Only identifiable through the NVD CPE.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/swf/flowplayer-3.2.6.swf"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:flowplayer-controls@3.2.4",
+      "name": "flowplayer-flash-controls",
+      "version": "3.2.4",
+      "supplier": {
+        "name": "Flowplayer Ltd / Flowplayer Oy"
+      },
+      "copyright": "Copyright (c) 2008-2011 Flowplayer Oy",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "description": "No CPE on purpose: flowplayer_flash 3.2.4 would wrongly match player CVEs to the plugin.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/swf/flowplayer.controls-3.2.4.swf"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vendored:apache-pluto-portlet-spec-css",
+      "name": "portlet-spec-1.0.css (Apache Pluto)",
+      "supplier": {
+        "name": "The Apache Software Foundation"
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "description": "JSR-168 portlet specification stylesheet from Apache Portals (Pluto); version not stated.",
+      "components": [
+        {
+          "type": "file",
+          "name": "src/main/resources/css/portlet-spec-1.0.css"
+        }
+      ],
+      "properties": [
+        {
+          "name": "jahia:sbom-confidence",
+          "value": "medium"
+        }
+      ]
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "id": "CVE-2024-5020",
+      "source": {
+        "name": "NVD",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-5020"
+      },
+      "description": "Stored XSS through FancyBox 1.3.4-3.5.7 inserting caption/title attributes as HTML.",
+      "analysis": {
+        "state": "in_triage",
+        "detail": "Not matchable automatically: NVD status Deferred without CPE, GitHub advisory without package. Needs manual tracking."
+      },
+      "affects": [
+        {
+          "ref": "vendored:fancybox@2.1.5"
+        },
+        {
+          "ref": "vendored:fancybox-pack@2.1.4"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-3650",
+      "source": {
+        "name": "NVD",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-3650"
+      },
+      "description": "Colorbox does not sanitize link title attributes ($title.html(element.title)).",
+      "analysis": {
+        "state": "in_triage",
+        "detail": "Not matchable automatically: NVD status Deferred without CPE, GitHub advisory without package. Needs manual tracking."
+      },
+      "affects": [
+        {
+          "ref": "vendored:jquery-colorbox@1.3.17.2"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-2537",
+      "source": {
+        "name": "NVD",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-2537"
+      },
+      "description": "Stored XSS through the ThickBox library (stated for 3.1; the vendored 3 has the same title handling).",
+      "analysis": {
+        "state": "in_triage",
+        "detail": "Not matchable automatically: NVD status Deferred without CPE, GitHub advisory without package. Needs manual tracking."
+      },
+      "affects": [
+        {
+          "ref": "vendored:thickbox@3"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-6493",
+      "source": {
+        "name": "NVD",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6493"
+      },
+      "description": "ReDoS in CodeMirror mode/markdown/markdown.js (present in javascript/codemirror/mode/markdown/).",
+      "analysis": {
+        "state": "in_triage",
+        "detail": "Not matchable automatically: no NVD CPE configuration, GitHub advisory without package. Needs manual tracking."
+      },
+      "affects": [
+        {
+          "ref": "pkg:npm/codemirror@3.19.0"
+        }
+      ]
+    },
+    {
+      "id": "SNYK-JS-JQUERYFORM-574783",
+      "source": {
+        "name": "Snyk",
+        "url": "https://security.snyk.io/vuln/SNYK-JS-JQUERYFORM-574783"
+      },
+      "description": "XSS in jquery-form (all versions, no upstream fix; no CVE).",
+      "analysis": {
+        "state": "in_triage",
+        "detail": "Jahia backported jquery-form/form#586 (HTML-escaping when inserting into a target, no eval in the parseJSON fallback); replaceTarget:true and script responses are still unprotected. Only Snyk-based scanners report it."
+      },
+      "affects": [
+        {
+          "ref": "pkg:npm/jquery-form@3.19.0"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2018-20676",
+      "source": {
+        "name": "NVD",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-20676"
+      },
+      "description": "XSS in the Bootstrap tooltip data-viewport attribute.",
+      "analysis": {
+        "state": "not_affected",
+        "detail": "The viewport option was introduced in Bootstrap 3; it does not exist in the vendored 2.3.1 plugins.",
+        "justification": "code_not_present"
+      },
+      "affects": [
+        {
+          "ref": "pkg:npm/bootstrap@2.3.1"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2018-20677",
+      "source": {
+        "name": "NVD",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-20677"
+      },
+      "description": "XSS in the Bootstrap affix configuration target property.",
+      "analysis": {
+        "state": "not_affected",
+        "detail": "The affix target option does not exist in the vendored 2.3.1 affix plugin.",
+        "justification": "code_not_present"
+      },
+      "affects": [
+        {
+          "ref": "pkg:npm/bootstrap@2.3.1"
+        }
+      ]
+    }
+  ]
+}
